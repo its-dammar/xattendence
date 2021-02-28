@@ -1,0 +1,35 @@
+body {
+    line-height: 1;
+    margin: 1em;
+    min-width: 100%;
+}
+
+th {
+    background-color: #001f3f;
+    color: #fff;
+    padding: 0.2em 1em;
+}
+
+td {
+    border-top: 1px solid #eee;
+    padding: 0.2em 1em;
+}
+
+input {
+    cursor: pointer;
+}
+
+/* Column types */
+th.missed-col {
+    background-color: rgb(0, 26, 255);
+}
+
+td.missed-col {
+    background-color: #ffecec;
+    color: rgb(47, 0, 255);
+    text-align: center;
+}
+
+.name-col {
+    text-align: left;
+}
