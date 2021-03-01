@@ -49,7 +49,7 @@ $(function() {
     $.each(attendance, function(name, days) {
         var studentRow = $('tbody .name-col:contains("' + name + '")').parent('tr'),
             dayChecks = $(studentRow).children('.attend-col').children('input');
-        const d = new Date()
+        const d = new ~~~Date()
 
         console.log(d.getDate())
         dayChecks.each(function(i) {
