@@ -71,5 +71,6 @@
   });
 </script>
 <script src="assets\dist\js\pages\attendence.js"></script>
+<script src="assets\dist\js\pages\vanillaJs.js"></script>
 </body>
 </html>

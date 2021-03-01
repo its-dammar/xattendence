@@ -2,30 +2,21 @@
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper bg-dark">
 
-
 <?php require('inc/sidebar.php'); ?>
 
-  <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper bg-dark">
-    <!-- Content Header (Page header) -->
     <div class="content-header">
         <div class="container-fluid">
             <div class="row">
-              <!-- left column -->
               <div class="col-md-12">
-                <!-- general form elements -->
                 <div class="card card-primary">
-
-                  <h1 class="text-center bg-dark p-3 mw-100"> <span class="text-danger font-weight-bold">X</span> 
-                  <span class="text-white font-weight-bold">dezo</span><span>&nbsp&nbsp&nbsp&nbsp&nbsp
+                <div class="card">
+                  <h1 class="text-center bg-dark p-3 mw-100"> <span class="text-danger font-weight-bold h1">X</span> 
+                  <span class="text-white font-weight-bold h1">dezo</span><span>&nbsp&nbsp&nbsp&nbsp&nbsp
                   Technologies</span></h1>
-                  <div class="card-header">
-                    <a href="add-developers.php"><h3 class="card-title font-wight-bold text-white ml-5">Add Developer</h3></a>
-                  </div>
-                  <!-- /.card-header -->
-                  <!-- form start -->
-
-                  <!-- when the button is submit -->
+                <div class="card-header bg-primary ">
+                  <h3 class="card-title text-white font-weight-bold ml-5 ">Add Developers</h3>
+                </div>
                   <?php
                   if(isset($_POST['submit'])) {
                     $name = $_POST['name'];
@@ -36,7 +27,6 @@
                     $position = $_POST['position'];
                     $contact = $_POST['contact'];
                     $experience = $_POST['experience'];
-
                     if($name!="" && $email!="" && $contact!="") {
                       $query = "INSERT INTO tbl_developers (name, company, address, email, qfn, position, contact, experience,status) 
                       VALUES('$name','$company','$address','$email','$qfn','$position','$contact','$experience',1)";
@@ -101,21 +91,11 @@
                     </div>
                   </form>
                 </div>
-                <!-- /.card -->
               </div>
             </div>
-            <!-- /.row -->
-          </div><!-- /.container-fluid -->
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
 <?php require('inc/footer.php'); ?>

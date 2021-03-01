@@ -12,8 +12,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            
-        <h1 class="text-center bg-dark p-3 "> <span class="text-danger font-weight-bold">X</span> 
+          <h1 class="text-center bg-dark p-3 "> <span class="text-danger font-weight-bold">X</span> 
           <span class="text-white font-weight-bold">dezo</span><span>&nbsp&nbsp&nbsp&nbsp&nbsp
           Technologies</span></h1>
           </div><!-- /.col -->

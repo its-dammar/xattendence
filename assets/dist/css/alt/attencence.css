@@ -9,7 +9,10 @@ th {
     color: #fff;
     padding: 0.2em 1em;
 }
-
+tr{
+    max-width: 500px;
+    background-color: red;
+}
 td {
     border-top: 1px solid #eee;
     padding: 0.2em 1em;

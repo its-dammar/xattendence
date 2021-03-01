@@ -18,9 +18,13 @@ if(isset($_GET['id'])) {
  ?>
 <!-- To show data -->
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4  bg-primary p-2">
-            <h1 class="h3 mb-0 text-gray-800 ml-5">View Developers</h1>
-          </div>
+          <div class="card">
+              <h1 class="text-center bg-dark p-3 mw-100"> <span class="text-danger font-weight-bold h1 ">X</span> 
+                  <span class="text-white font-weight-bold h1">dezo</span><span>&nbsp&nbsp&nbsp&nbsp&nbsp
+                  Technologies</span></h1>
+                <div class="card-header bg-primary ">
+                  <h3 class="card-title text-white font-weight-bold ml-5 ">View developers</h3>
+                </div>
           <!-- Content Row -->
           <div class="container-fluid w-0">
           <form action="#" method="POST" enctype="multipart/form-data ">

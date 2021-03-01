@@ -4,14 +4,14 @@
     <!-- Brand Logo -->
     <a href="https://wwww.xdezo.com/" class="brand-link">
     <div class="head">
-    <span class="text-danger font-weight-bold h3">X</span> 
-     <span class="text-white font-weight-bold h3">dezo</span><span class="text-primary h3">
+    <span class="text-danger font-weight-bold h1">X</span> 
+     <span class="text-white font-weight-bold h1">dezo</span><span class="font-weight-bold text-white">
       Attendance</span>
     </div>
     </a>
 
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="sidebar overflow-hidden">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="info">
@@ -47,17 +47,32 @@
           </li>
           
           <li class="nav-item">
-            <a href="add-month.php" class="nav-link">
+            <a href="add-months.php" class="nav-link">
               <p>
                 Add Months
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="add-years.php" class="nav-link">
+              <p>
+                Add Year
+              </p>
+            </a>
+          </li>
           
           <li class="nav-item">
-            <a href="add-year.php" class="nav-link">
+            <a href="manage-month.php" class="nav-link">
               <p>
-                Add years
+                Manage Months
+              </p>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="manage-years.php" class="nav-link">
+              <p>
+                Manage years
               </p>
             </a>
           </li>
