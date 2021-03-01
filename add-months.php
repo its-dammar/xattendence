@@ -53,7 +53,7 @@
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label for="exampleInputEmail1">Month:</label>
-                                <input type="text" class="form-control" placeholder="Enter name" name="month">
+                                <input type="text" class="form-control" placeholder="Enter Month" name="month">
                             </div>
                         </div>
                         </div>

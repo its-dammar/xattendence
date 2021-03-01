@@ -5,13 +5,13 @@ body {
 }
 
 th {
-    background-color: #001f3f;
+    background-color: #2a2d30;
     color: #fff;
     padding: 0.2em 1em;
 }
 tr{
     max-width: 500px;
-    background-color: red;
+    background-color: rgb(119, 113, 113);
 }
 td {
     border-top: 1px solid #eee;

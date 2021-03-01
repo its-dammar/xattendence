@@ -13,10 +13,10 @@
 
                     <div class="card">
                         <h1 class="text-center bg-dark p-3 mw-100"> <span class="text-danger font-weight-bold h1">X</span> 
-                    <span class="text-white font-weight-bold h1">dezo</span><span>&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span class="text-white font-weight-bold h1">dezo</span><span class="f-l">
                     Technologies</span></h1>
                     <div class="card-header bg-primary ">
-                    <h3 class="card-title text-white font-weight-bold ml-5 ">Add year</h3>
+                    <h3 class="card-title text-white font-weight-bold ml-5 ">Add Year</h3>
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
