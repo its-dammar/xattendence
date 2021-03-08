@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 03, 2021 at 08:48 AM
+-- Generation Time: Mar 08, 2021 at 06:51 AM
 -- Server version: 5.7.31
 -- PHP Version: 7.3.21
 
@@ -24,6 +24,37 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_attendance`
+--
+
+DROP TABLE IF EXISTS `tbl_attendance`;
+CREATE TABLE IF NOT EXISTS `tbl_attendance` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `developers_id` int(11) NOT NULL,
+  `year_id` int(11) NOT NULL,
+  `month_id` int(11) NOT NULL,
+  `day_id` int(11) NOT NULL,
+  `status` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=97 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_attendance`
+--
+
+INSERT INTO `tbl_attendance` (`id`, `developers_id`, `year_id`, `month_id`, `day_id`, `status`) VALUES
+(93, 38, 2021, 3, 4, 1),
+(94, 33, 2021, 3, 4, 1),
+(86, 24, 2021, 3, 4, 1),
+(87, 28, 2021, 3, 4, 1),
+(88, 37, 2021, 3, 4, 1),
+(92, 39, 2021, 3, 4, 1),
+(95, 36, 2021, 3, 4, 1),
+(96, 40, 2021, 3, 8, 1);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_days`
 --
 
@@ -33,15 +64,20 @@ CREATE TABLE IF NOT EXISTS `tbl_days` (
   `day` varchar(11) NOT NULL,
   `status` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_days`
 --
 
 INSERT INTO `tbl_days` (`id`, `day`, `status`) VALUES
-(4, 'sunday', 1),
-(5, 'sunday', 1);
+(8, 'Tuesday', 1),
+(7, 'Monday', 1),
+(6, 'sunday', 1),
+(9, 'Wednesday', 1),
+(10, 'Thrusday', 1),
+(11, 'Friday', 1),
+(12, 'Saturday', 1);
 
 -- --------------------------------------------------------
 
@@ -62,37 +98,16 @@ CREATE TABLE IF NOT EXISTS `tbl_developers` (
   `experience` varchar(100) NOT NULL,
   `status` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_developers`
 --
 
 INSERT INTO `tbl_developers` (`id`, `name`, `company`, `address`, `email`, `qfn`, `position`, `contact`, `experience`, `status`) VALUES
-(35, 'Sagar Bohora', 'Xdezo Tenchnologies', 'Sirjana chowk', 'sagar@gmail.com', '+2 pass and half bacholer pass', 'DCO', '908000000008', 'no experience', 1),
-(33, 'Regina Munoz', 'Erickson Solomon LLC', 'Ex tempor in non ass', 'quli@mailinator.com', 'Eu nesciunt tempor ', 'Nulla qui soluta id', 'Sit ut adipisci non', 'Et ut Nam optio fug', 1),
-(31, 'Orli Chandler', 'Garrett Park LLC', 'Consectetur alias am', 'xahoze@mailinator.com', 'Totam saepe unde aut', 'Corrupti iure a omn', 'Quisquam ipsa earum', 'Consequatur Rerum h', 1),
-(28, 'Maile Mccoy', 'Guerrero Carey LLC', 'Quibusdam laudantium', 'dyzeb@mailinator.com', 'Quia fugiat velit et', 'Minima cillum Nam qu', 'Cupiditate laboris v', 'Sunt anim libero iur', 1),
-(29, 'Edward Fleming', 'Bradley Shepherd Co', 'Unde non perspiciati', 'powu@mailinator.com', 'Quos culpa sunt rem', 'Consequuntur et volu', 'Laboriosam quos quo', 'Illum omnis corrupt', 1),
-(30, 'Dale Hunter', 'Norton and Richards Traders', 'Eveniet ab et natus', 'ladeh@mailinator.com', 'Sint est dolore eum ', 'Autem consectetur de', 'Proident quia offic', 'Voluptates at dolor ', 1),
-(24, 'Nehru Whitaker', 'Mccullough and Carter Inc', 'Esse perspiciatis ', 'balevyha@mailinator.com', 'Dolorum tempore vel', 'Repellendus In quas', 'Minus laborum quo ni', 'Ex laboris vel cillu', 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_mattendences`
---
-
-DROP TABLE IF EXISTS `tbl_mattendences`;
-CREATE TABLE IF NOT EXISTS `tbl_mattendences` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `dp_id` int(11) NOT NULL,
-  `y_id` int(11) NOT NULL,
-  `m_id` int(11) NOT NULL,
-  `d_id` int(11) NOT NULL,
-  `status` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+(38, 'Dinesh Thapa', 'XDezo Technologies', 'Pokhara', 'dinesh@gmail.com', 'Master ', 'CEO', '9825174992', '10', 1),
+(39, 'Sandesh Poudel', 'XDezo Technologies', 'Pokhara', 'sandeshpoudel73@gmail.com', 'Inter in Law, BBS 2nd year, Life Counselor', 'CMO', '9846043520', '3 years', 1),
+(40, 'Santosh Baniya', 'XDezo Technologies', 'Pokhara', 'santosh@gmail.com', 'fged', 'fgbhfhg', '9825174992', 'ghj', 1);
 
 -- --------------------------------------------------------
 
@@ -106,30 +121,25 @@ CREATE TABLE IF NOT EXISTS `tbl_months` (
   `month` varchar(50) NOT NULL,
   `status` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_months`
 --
 
 INSERT INTO `tbl_months` (`id`, `month`, `status`) VALUES
-(19, 'january', 1),
-(18, 'january', 1),
-(15, 'hello3', 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_xdatten`
---
-
-DROP TABLE IF EXISTS `tbl_xdatten`;
-CREATE TABLE IF NOT EXISTS `tbl_xdatten` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `tick` varchar(10) NOT NULL,
-  `status` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+(24, 'May', 1),
+(21, 'Febuary', 1),
+(22, 'March', 1),
+(23, 'April', 1),
+(20, 'january', 1),
+(25, 'June', 1),
+(26, 'July', 1),
+(27, 'Augest', 1),
+(28, 'September', 1),
+(29, 'Octumber', 1),
+(30, 'November', 1),
+(31, 'December', 1);
 
 -- --------------------------------------------------------
 
@@ -143,18 +153,34 @@ CREATE TABLE IF NOT EXISTS `tbl_years` (
   `year` int(11) NOT NULL,
   `status` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_years`
 --
 
 INSERT INTO `tbl_years` (`id`, `year`, `status`) VALUES
-(7, 23423423, 1),
-(5, 2323, 1),
-(6, 2021, 1),
-(8, 2021, 1),
-(9, 2021, 1);
+(14, 2004, 1),
+(13, 2003, 1),
+(12, 2002, 1),
+(11, 2001, 1),
+(10, 2000, 1),
+(15, 2006, 1),
+(16, 2007, 1),
+(17, 2008, 1),
+(18, 2009, 1),
+(19, 2010, 1),
+(20, 2011, 1),
+(21, 2012, 1),
+(22, 2013, 1),
+(23, 2014, 1),
+(24, 2015, 1),
+(25, 2016, 1),
+(26, 2017, 1),
+(27, 2018, 1),
+(28, 2019, 1),
+(29, 2020, 1),
+(30, 2021, 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
