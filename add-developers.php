@@ -12,7 +12,7 @@
                 <div class="card card-primary">
                 <div class="card">
                   <h1 class="text-center bg-dark p-3 mw-100"> <span class="text-danger font-weight-bold h1">X</span> 
-                  <span class="text-white font-weight-bold h1">dezo</span><span>&nbsp&nbsp&nbsp&nbsp&nbsp
+                  <span class="text-white font-weight-bold h1">dezo</span><span class="f-l ">
                   Technologies</span></h1>
                 <div class="card-header bg-primary ">
                   <h3 class="card-title text-white font-weight-bold ml-5 ">Add Developers</h3>
@@ -49,7 +49,7 @@
 
                   } 
                   ?>
-                  <form action="#" method="POST" enctype="multipart/form-data ">
+                  <form action="#" method="POST" enctype="multipart/form-data">
                     <div class="card-body bg-secondary">
                       <div class="row">
                         <div class="form-group col-md-6">
@@ -86,7 +86,7 @@
                           </div>
                       </div>
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer bg-dark">
                       <button type="submit" class="btn btn-primary" name="submit">Submit</button>
                     </div>
                   </form>

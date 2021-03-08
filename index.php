@@ -3,31 +3,24 @@
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
-<?php require('inc/sidebar.php'); ?>
+  <?php require('inc/sidebar.php'); ?>
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+  <div class="content-wrapper bg-dark">
     <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-          <h1 class="text-center bg-dark p-3 "> <span class="text-danger font-weight-bold">X</span> 
-          <span class="text-white font-weight-bold">dezo</span><span>&nbsp&nbsp&nbsp&nbsp&nbsp
-          Technologies</span></h1>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
+      <div class="container-fluid bg-dark">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card card-primary">
+              <div class="card">
+            <h1 class="text-center bg-dark p-3 "> <span class="text-danger font-weight-bold">X</span> 
+            <span class="text-white font-weight-bold">dezo</span><span>&nbsp &nbsp &nbsp &nbsp &nbsp
+            Technologies</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
   </div>
+</div>
 
 <?php require('inc/footer.php'); ?>

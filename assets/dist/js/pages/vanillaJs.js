@@ -1,24 +1,45 @@
-    
-    const month = document.querySelector('.month')
-    const weekDays = document.querySelector('.weekDays-col')
-    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    const d = new Date()
-function editMonths(){
-    console.log(month,"MONth")
-    month.textContent = `${d.getFullYear()} ${months[d.getMonth()]}`
+// <th>Sun</th>
+const xdMonth = document.querySelector(".xdmonth");
+const xdYear = document.querySelector(".xdyear");
+const xdDay = document.querySelector(".xdday");
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+const d = new Date();
 
+function editMonths() {
+  console.log(xdMonth, "MONth");
+  xdYear.textContent = d.getFullYear();
+  xdMonth.textContent = months[d.getMonth()];
+  xdDay.textContent = days[d.getDay()];
 }
 editMonths();
 
-
-function addWeekDays(){
-    const totalDays  = new Date(d.getFullYear(),d.getMonth()+1,0).getDate();  
-    console.log(totalDays,"ss")
-    for (let index = 0; index < totalDays; index++) {
-    const newDate = new Date(2021,d.getMonth(),index+1).toString();
-        weekDays.innerHTML +=`<th>${newDate.slice(0,4)}</th>`
-    }
-}
-addWeekDays();
-// <th>Sun</th>
+// // <th>Sun</th>
+// function addWeekDays() {
+//   const totalDays = new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate();
+//   const newDate = new Date(2021, d.getMonth(),d.getDay()).toString().slice(0,4);
+//   console.log(totalDays,new Date(2021, d.getMonth(),d.getDay()).toString(), "ss");
+// console.log(days[d.getDay()])
+//   }
+// addWeekDays()

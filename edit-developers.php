@@ -1,7 +1,9 @@
 <?php require('inc/toppart.php'); ?>
-<?php require('inc/sidebar.php'); ?>
         <!-- Begin Page Content -->
  <div class="container-fluid  bg-dark">
+ 
+<?php require('inc/sidebar.php'); ?>
+
  <div class="content-wrapper bg-dark">
     <div class="content-header">
         <div class="container-fluid">
@@ -44,7 +46,7 @@
               if($name!="" && $company!="" && $address!="" && $email!="" && $qfn!="" && $position!=""&& $experience!="" && $contact!="") {
                 $query = "UPDATE tbl_developers SET name='$name', company='$company', address='$address', email='$email', qfn='$qfn', position='$position', contact='$contact', experience='$experience' WHERE id='$id'";
                 $result = mysqli_query($conn,$query);
-                echo"$result";
+                // echo"$result";
                 if($result)
                 ?>
                 <meta http-equiv = "refresh" content = " 0 ; url = manage-developers.php?msg=usuccess"/>
@@ -57,7 +59,7 @@
              ?>    
             <form action="#" method="POST" enctype="multipart/form-data ">
               <div class="card-body bg-secondary">
-                <div class="row">
+                <div class="row ">
                   <div class="form-group col-md-6">
                       <label for="exampleInputEmail1">Name:</label>
                       <input type="text" class="form-control" placeholder="Enter name" name="name"  value="<?php echo $data_row['name']; ?>">

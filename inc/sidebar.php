@@ -34,22 +34,36 @@
           <li class="nav-item">
             <a href="manage-developers.php" class="nav-link">
               <p>
-                Manage Manage Developers
+                 Manage Developers
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="attendence.php" class="nav-link">
+            <a href="add-attendance.php" class="nav-link">
               <p>
-                Xdezo Developers Attendence
+                Developers Attendance
               </p>
             </a>
           </li>
-          
+          <li class="nav-item">
+            <a href="manage-attendance.php" class="nav-link">
+              <p>
+                Manage Attendance
+              </p>
+            </a>
+          </li>
+
           <li class="nav-item">
             <a href="add-months.php" class="nav-link">
               <p>
-                Add Months
+                Add Month
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="manage-month.php" class="nav-link">
+              <p>
+                Manage Months
               </p>
             </a>
           </li>
@@ -60,15 +74,6 @@
               </p>
             </a>
           </li>
-          
-          <li class="nav-item">
-            <a href="manage-month.php" class="nav-link">
-              <p>
-                Manage Months
-              </p>
-            </a>
-          </li>
-          
           <li class="nav-item">
             <a href="manage-years.php" class="nav-link">
               <p>
@@ -76,6 +81,24 @@
               </p>
             </a>
           </li>
+
+           
+          <li class="nav-item">
+            <a href="add-day.php" class="nav-link">
+              <p>
+                Add Day
+              </p>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="manage-days.php" class="nav-link">
+              <p>
+                Manage days
+              </p>
+            </a>
+          </li>
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

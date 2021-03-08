@@ -49,18 +49,7 @@ $(function() {
     $.each(attendance, function(name, days) {
         var studentRow = $('tbody .name-col:contains("' + name + '")').parent('tr'),
             dayChecks = $(studentRow).children('.attend-col').children('input');
-        const d = new ~~~Date()
-
-        console.log(d.getDate())
-        dayChecks.each(function(i) {
-            if(i+1===d.getDate()){
-                console.log(true)
-                $(this).prop('checked', days[i]);
-            }else{
-                console.log(false)
-                $(this).prop('disabled',true);
-            }
-        });
+       
     });
 
     // When a checkbox is clicked, update localStorage

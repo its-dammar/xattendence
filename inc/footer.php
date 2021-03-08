@@ -1,5 +1,5 @@
 <!-- /.content-wrapper -->
-<footer class="main-footer">
+<footer class="main-footer bg-dark">
     <strong>Copyright &copy; 2021 <a href="http://wwww.xdezo.com">Xdezo Technologies</a>.</strong>
     All rights reserved.
   </footer>

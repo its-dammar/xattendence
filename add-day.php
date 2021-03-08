@@ -13,10 +13,10 @@
 
                     <div class="card">
                         <h1 class="text-center bg-dark p-3 mw-100"> <span class="text-danger font-weight-bold h1">X</span> 
-                    <span class="text-white font-weight-bold h1">dezo</span><span>&nbsp&nbsp&nbsp&nbsp&nbsp
+                       <span class="text-white font-weight-bold h1">dezo</span><span class="f-l">
                     Technologies</span></h1>
                     <div class="card-header bg-primary ">
-                    <h3 class="card-title text-white font-weight-bold ml-5 ">Add Month</h3>
+                    <h3 class="card-title text-white font-weight-bold ml-5 ">Add day</h3>
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
@@ -24,16 +24,16 @@
                     <!-- when the button is submit -->
                     <?php
                     if(isset($_POST['submit'])) {
-                        $month = $_POST['month'];
+                        $day = $_POST['day'];
 
-                        if($month!="") {
-                        $query = "INSERT INTO tbl_months(month, status) 
-                        VALUES('$month',1)";
+                        if($day!="") {
+                        $query = "INSERT INTO tbl_days(day, status) 
+                        VALUES('$day',1)";
                         $result = mysqli_query($conn,$query);
                         if($result)
                         {
                             ?>
-                            <meta http-equiv = "refresh" content = " 0 ; url = manage-month.php"/>
+                            <meta http-equiv = "refresh" content = " 0 ; url = manage-days.php"/>
                             <?php
                         }
                         else 
@@ -52,8 +52,8 @@
                         <div class="card-body bg-secondary">
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label for="exampleInputEmail1">Month:</label>
-                                <input type="text" class="form-control" placeholder="Enter Month" name="month">
+                                <label for="exampleInputEmail1">Day:</label>
+                                <input type="text" class="form-control" placeholder="Enter Day" name="day">
                             </div>
                         </div>
                         </div>
