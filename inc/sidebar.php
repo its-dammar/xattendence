@@ -38,6 +38,22 @@
               </p>
             </a>
           </li>
+
+          <li class="nav-item">
+            <a href="add-contact.php" class="nav-link">
+              <p>
+                Add Contacts
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="manage-contact.php" class="nav-link">
+              <p>
+                Manage Contacts
+              </p>
+            </a>
+          </li>
+
           <li class="nav-item">
             <a href="add-attendance.php" class="nav-link">
               <p>
@@ -45,6 +61,14 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="attendance-details.php" class="nav-link">
+              <p>
+                Attendance Details
+              </p>
+            </a>
+          </li>
+
           <li class="nav-item">
             <a href="manage-attendance.php" class="nav-link">
               <p>

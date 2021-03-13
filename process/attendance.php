@@ -12,7 +12,8 @@ if(isset($_GET['developer_id']))
         $month_id = date("m");
         $day_id = date("d");
     
-        $query = "INSERT INTO tbl_attendance(developers_id,year_id,month_id,day_id,status) VALUES('$id','$year_id','$month_id','$day_id',1)";
+        $query = "INSERT INTO tbl_attendance(developers_id,year_id,month_id,day_id,status) 
+        VALUES('$id','$year_id','$month_id','$day_id',1)";
         $result = mysqli_query($conn,$query);
         if($result)
         {
